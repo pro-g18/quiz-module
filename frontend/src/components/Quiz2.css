@@ -1,0 +1,186 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+.header {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0 10px 10px;
+}
+
+/* Progress bar styling */
+.progress-bar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #ff5722;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Dropdown container styling */
+.dropdown-container {
+    position: fixed;
+    top: 50px; /* Position it below the progress bar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* Dropdown styling */
+.dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #fff;
+}
+
+/* Wrapper to center content horizontally and vertically */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 30px 20px 20px; /* Added padding at the top to accommodate fixed elements */
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/* Rest of your existing styles... */
+
+/* Container to split page into two halves */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 60px; /* Space for the submit button */
+    margin-top: 30px;
+}
+
+/* Style for question and options boxes */
+.question-container {
+    display: flex;
+    margin-bottom: 20px; /* Space between each question and options */
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the question box */
+.question-box {
+    flex: 1;
+    background-color: #ffffff;
+    border-right: 2px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Style for the question number bar */
+.question-number-bar {
+    background-color: #4caf50;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+/* Style for the question text */
+.question-text {
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #d4d4d4;
+    padding: 15px;
+    border-radius: 8px;
+    user-select: none;
+}
+
+/* Style for the options box */
+.options-box {
+    flex: 1;
+    background-color: #eaf0f9;
+    border-left: 2px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the options */
+.options {
+    padding-left: 20px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/* Style for the selected option */
+.options label.selected {
+    background-color: #4caf50;
+    color: white;
+}
+
+.options label.selected:hover {
+    background-color: #45a049;
+    color: #000;
+}
+
+/* Style for unselected option on hover */
+.options label:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+    display: none; /* Hide the default radio button */
+}
+
+/* Style for the submit button */
+.submit-button {
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 500px; /* Restrict button width */
+    margin: 20px auto;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}

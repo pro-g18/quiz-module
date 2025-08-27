@@ -1,0 +1,199 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f3f5; /* Light gray background for the entire page */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Progress bar styling */
+.progress-bar {
+    position: fixed;
+    top: 10px; /* Top margin for the progress bar */
+    left: 50%;
+    width: 50%; /* Adjust width to make it smaller */
+    max-width: 700px; /* Restrict maximum width */
+    height: 10px;
+    background-color: #b7d7ed !important; /* Background color of the progress bar */
+    border-radius: 5px; /* Rounded corners for the progress bar */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Progress styling */
+.progress {
+    height: 100%;
+    background-color: #2ea3f2 !important; /* Color of the progress indicator */
+    border-radius: 5px; /* Rounded corners for the progress indicator */
+    width: 0%; /* Start with 0% width */
+    transition: width 0.3s ease-in-out; /* Smooth transition for progress change */
+}
+
+
+/* Fixed container for submit button and dropdown */
+.fixed-container {
+    position: fixed;
+    top: 30px; /* Positioned below the progress bar */
+    left: 50%;
+    width: 50%; /* Adjust width to fit both elements */
+    max-width: 700px; /* Restrict maximum width */
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Space between the dropdown and button */
+    align-items: center; /* Align items vertically */
+    padding: 10px 0; /* Padding for spacing */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow effect */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Style for dropdown select */
+.fixed-container select {
+    width: 25%; /* Further reduced width */
+    padding: 8px; /* Slightly reduced padding */
+    font-size: 0.9rem; /* Smaller font size */
+    border: 1px solid #007bff; /* Match the quiz heading color */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text color */
+    cursor: pointer;
+}
+
+
+/* Hover effect for dropdown */
+.fixed-container select:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Style for submit button */
+.fixed-container button {
+    width: 25%; /* Adjust width to fit within the flex container */
+    padding: 15px;
+    background-color: #28a745; /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 1.2rem; /* Larger font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Hover effect for the submit button */
+.fixed-container button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Wrapper to center content vertically and horizontally */
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center; /* Center horizontally */
+    padding-top: 60px; /* Space for the fixed elements */
+    height: calc(100vh - 80px); /* Adjust height to fit the viewport minus fixed elements */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+/* Style for the quiz container */
+.quiz-container {
+    width: 100%;
+    max-width: 700px; /* Restrict width to make it look centered */
+    padding: 40px;
+    background-color: #ffffff; /* White background for quiz container */
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+    max-height: calc(100vh - 80px - 70px); /* Restrict height to fit the viewport minus fixed elements and button */
+    margin-top: 20px; /* Margin to ensure space from the dropdown */
+}
+
+/* Style for the quiz heading */
+.quiz-container h1 {
+    text-align: center;
+    background-color: #007bff; /* Bright blue background for the heading */
+    color: white;
+    padding: 10px; /* Reduced padding for a smaller heading */
+    margin-bottom: 20px; /* Reduced margin to reduce space */
+    border-radius: 8px;
+}
+
+/* Style for the question container */
+.quiz-container .question-container {
+    background-color: #d9edf7; /* Light blue background for the question container */
+    border-radius: 12px; /* Curved corners for the question container */
+    padding: 20px;
+    margin-bottom: 30px; /* Space between question and options */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+/* Style for the question bar */
+.quiz-container .question-bar {
+    background-color: #5bc0de; /* Medium blue background for the bar */
+    color: white; /* White text color */
+    padding: 10px;
+    border-radius: 8px; /* Curved corners for the bar */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Space below the bar */
+}
+
+/* Style for the questions */
+.quiz-container .question {
+    background-color: #ffffff; /* White background for the question box */
+    border-radius: 10px; /* Rounded corners for the question box */
+    padding: 20px;
+    user-select: none; /* Make the text unselectable */
+    border: 1px solid #ccc; /* Light border for the question box */
+}
+
+/* Style for the question text */
+.quiz-container .question h2 {
+    font-size: 1.5rem;
+    color: #333; /* Dark gray color for the question text */
+    margin: 0;
+    background-color: #8fadd2; /* Very light gray background for the question text */
+    padding: 10px; /* Padding inside the question text box */
+    border-radius: 8px; /* Rounded corners for the question text background */
+}
+
+/* Style for the options container */
+.quiz-container .options-container {
+    background-color: #dff0d8; /* Light green background for the options container */
+    border-radius: 12px; /* Curved corners for the options container */
+    padding: 20px; /* Padding inside the options container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+/* Style for the options */
+.quiz-container .options {
+    padding-left: 0; /* Remove padding inside options */
+}
+
+.quiz-container .options label {
+    display: block;
+    margin-bottom: 10px; /* Reduced margin for a tighter layout */
+    font-size: 1.1rem;
+    color: #212529; /* Darker text color */
+    cursor: pointer;
+    padding: 10px; /* Padding for the option labels */
+    border: 1px solid #bce8f1; /* Light blue border around options */
+    border-radius: 5px; /* Rounded corners for option labels */
+    background-color: #ffffff; /* White background for individual option labels */
+}
+
+.quiz-container .options label:hover {
+    background-color: #e6e6e6; /* Light gray background on hover */
+}
+
+/* Style for selected options */
+.quiz-container .options label.selected {
+    background-color: #d1ecf1; /* Light blue when selected */
+    border-color: #007bff; /* Darker blue border for selected option */
+}
+
+/* Style for radio buttons */
+.quiz-container input[type="radio"] {
+    margin-right: 10px;
+}

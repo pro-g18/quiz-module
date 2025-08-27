@@ -1,0 +1,21 @@
+question,option1,option2,option3,option4,correctAnswer
+What is the time complexity of finding the longest increasing subsequence using dynamic programming?,O(n^2),O(n log n),O(n^3),O(log n),O(n^2)
+Which algorithm is used for finding strongly connected components in a graph?,Kruskal's algorithm,Dijkstra's algorithm,Kosaraju's algorithm,Floyd-Warshall algorithm,Kosaraju's algorithm
+What is the purpose of Fenwick Tree in competitive programming?,Handling connected components,Finding shortest path,Performing range queries,Graph coloring,Performing range queries
+Which data structure is ideal for finding the median of a dynamic set of numbers?,Stack,Heap,Queue,Linked List,Heap
+What is the amortized time complexity of splay tree operations?,O(1),O(log n),O(n),O(n log n),O(log n)
+Which algorithm can be used to detect a cycle in a directed graph?,Prim's algorithm,Floyd’s cycle detection algorithm,Tarjan's algorithm,Breadth-First Search,Tarjan's algorithm
+How many strongly connected components does a tree with \( n \) nodes have?,n,n-1,1,n+1,1
+Which data structure is best suited for implementing a LRU cache?,Queue,Stack,Deque,HashMap with Doubly Linked List,HashMap with Doubly Linked List
+What is the space complexity of KMP string matching algorithm?,O(n),O(m+n),O(m),O(1),O(m)
+What is the lower bound of comparison-based sorting algorithms?,O(n log n),O(n^2),O(n),O(log n),O(n log n)
+What technique is used in dynamic programming to optimize space complexity?,Memoization,Divide and Conquer,Greedy Algorithm,Sliding Window,Sliding Window
+Which graph algorithm works based on the principle of relaxation?,Dijkstra’s algorithm,Floyd-Warshall algorithm,Kosaraju's algorithm,Kruskal’s algorithm,Dijkstra’s algorithm
+What is the expected time complexity of QuickSort when the pivot is chosen randomly?,O(n),O(n log n),O(n^2),O(log n),O(n log n)
+Which algorithm is used to find the articulation points in a graph?,DFS,BFS,Floyd-Warshall,Tarjan’s Algorithm,Tarjan’s Algorithm
+Which data structure is used in a Trie for storing a collection of strings?,Array,HashMap,Graph,Tree,Tree
+What is the maximum number of edges in a simple undirected graph with \( n \) nodes?,n(n+1)/2,n^2,(n(n-1))/2,n(n+1),(n(n-1))/2
+Which algorithm is used for finding the shortest path in an unweighted graph?,Bellman-Ford,Floyd-Warshall,Breadth-First Search,Prim’s Algorithm,Breadth-First Search
+Which algorithm is used to solve the knapsack problem optimally?,Dynamic Programming,Greedy Algorithm,Divide and Conquer,Backtracking,Dynamic Programming
+What is the purpose of Kruskal’s algorithm in graph theory?,Finding shortest path,Finding Minimum Spanning Tree,Detecting cycles,Finding Strongly Connected Components,Finding Minimum Spanning Tree
+Which algorithm is used to check bipartite graphs?,DFS,BFS,Coloring Algorithm,Floyd-Warshall Algorithm,BFS
