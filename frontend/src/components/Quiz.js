@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getQuizQuestions } from '../services/quizService';
 import { useNavigate } from 'react-router-dom';
-import './Quiz1.css';
+import './Quiz2.css';
 
 
 
